@@ -1,0 +1,30 @@
+.page {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  color: #212529;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+}
