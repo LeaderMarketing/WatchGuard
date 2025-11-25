@@ -1,10 +1,16 @@
+// Get base URL for assets (handles GitHub Pages subdirectory)
+const BASE_URL = import.meta.env.BASE_URL;
+
+// Helper to get full image path
+const img = (path) => `${BASE_URL}products/${path}`;
+
 export const productData = {
   tabletop: {
     products: [
-      { name: 'Firebox T115-W', image: '/products/T115-W.jpg', description: 'Entry-level firewall with built-in Wi-Fi 7 for small offices' },
-      { name: 'Firebox T125', image: '/products/T125.jpg', description: 'Compact UTM appliance for small business networks' },
-      { name: 'Firebox T145', image: '/products/T145.jpg', description: 'Mid-range tabletop firewall with SFP+ connectivity' },
-      { name: 'Firebox T185', image: '/products/T185.jpg', description: 'High-performance tabletop for growing businesses' }
+      { name: 'Firebox T115-W', image: img('T115-W.jpg'), description: 'Entry-level firewall with built-in Wi-Fi 7 for small offices' },
+      { name: 'Firebox T125', image: img('T125.jpg'), description: 'Compact UTM appliance for small business networks' },
+      { name: 'Firebox T145', image: img('T145.jpg'), description: 'Mid-range tabletop firewall with SFP+ connectivity' },
+      { name: 'Firebox T185', image: img('T185.jpg'), description: 'High-performance tabletop for growing businesses' }
     ],
     sections: [
       {
@@ -64,13 +70,13 @@ export const productData = {
   },
   'm-series': {
     products: [
-      { name: 'Firebox M295', image: '/products/m295.jpg', description: 'Rackmount UTM for medium-sized businesses' },
-      { name: 'Firebox M395', image: '/products/m395.jpg', description: 'High-throughput firewall for demanding networks' },
-      { name: 'Firebox M495', image: '/products/m495.jpg', description: 'Enterprise-grade security with modular expansion' },
-      { name: 'Firebox M595', image: '/products/m595.jpg', description: 'Advanced threat protection for large organizations' },
-      { name: 'Firebox M695', image: '/products/m695.jpg', description: 'Maximum performance rackmount appliance' },
-      { name: 'Firebox M4800', image: '/products/m4800.jpg', description: 'Data center firewall with 40Gb fiber options' },
-      { name: 'Firebox M5800', image: '/products/m5800.jpg', description: 'Enterprise flagship with unrestricted VPN tunnels' }
+      { name: 'Firebox M295', image: img('m295.jpg'), description: 'Rackmount UTM for medium-sized businesses' },
+      { name: 'Firebox M395', image: img('m395.jpg'), description: 'High-throughput firewall for demanding networks' },
+      { name: 'Firebox M495', image: img('m495.jpg'), description: 'Enterprise-grade security with modular expansion' },
+      { name: 'Firebox M595', image: img('m595.jpg'), description: 'Advanced threat protection for large organizations' },
+      { name: 'Firebox M695', image: img('m695.jpg'), description: 'Maximum performance rackmount appliance' },
+      { name: 'Firebox M4800', image: img('m4800.jpg'), description: 'Data center firewall with 40Gb fiber options' },
+      { name: 'Firebox M5800', image: img('m5800.jpg'), description: 'Enterprise flagship with unrestricted VPN tunnels' }
     ],
     sections: [
       {
@@ -175,10 +181,10 @@ export const productData = {
   wifi6: {
     indoor: {
       products: [
-        { name: 'AP130', image: '/products/AP130.jpg', description: 'Entry-level Wi-Fi 6 for small offices and remote workers' },
-        { name: 'AP230W', image: '/products/AP230W.jpg', description: 'Wall-plate AP with built-in switch for hospitality' },
-        { name: 'AP330', image: '/products/AP330.jpg', description: 'Medium-density AP for retail and K-12 schools' },
-        { name: 'AP432', image: '/products/AP432.jpg', description: 'High-density 4x4 AP for large campuses' }
+        { name: 'AP130', image: img('AP130.jpg'), description: 'Entry-level Wi-Fi 6 for small offices and remote workers' },
+        { name: 'AP230W', image: img('AP230W.jpg'), description: 'Wall-plate AP with built-in switch for hospitality' },
+        { name: 'AP330', image: img('AP330.jpg'), description: 'Medium-density AP for retail and K-12 schools' },
+        { name: 'AP432', image: img('AP432.jpg'), description: 'High-density 4x4 AP for large campuses' }
       ],
       sections: [
         {
@@ -267,8 +273,8 @@ export const productData = {
     },
     outdoor: {
       products: [
-        { name: 'AP332CR', image: '/products/AP332CER.jpg', description: 'Rugged outdoor AP for retail and manufacturing' },
-        { name: 'AP430CR', image: '/products/AP430CR.jpg', description: 'High-density outdoor AP for stadiums and campuses' }
+        { name: 'AP332CR', image: img('AP332CER.jpg'), description: 'Rugged outdoor AP for retail and manufacturing' },
+        { name: 'AP430CR', image: img('AP430CR.jpg'), description: 'High-density outdoor AP for stadiums and campuses' }
       ],
       sections: [
         {

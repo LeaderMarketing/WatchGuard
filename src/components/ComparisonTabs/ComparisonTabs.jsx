@@ -2,18 +2,21 @@ import React, { useMemo, useRef, useEffect } from 'react';
 import { productData } from './productData';
 import styles from './ComparisonTabs.module.css';
 
+// Get base URL for assets (handles GitHub Pages subdirectory)
+const BASE_URL = import.meta.env.BASE_URL;
+
 // Banner images for each category
 const categoryBanners = {
   tabletop: {
-    image: '/banners/Tabletop_banner.jpg',
+    image: `${BASE_URL}banners/Tabletop_banner.jpg`,
     alt: 'Firebox Tabletop Series',
   },
   'm-series': {
-    image: '/banners/Rackmount_banner.jpg',
+    image: `${BASE_URL}banners/Rackmount_banner.jpg`,
     alt: 'Firebox M Series',
   },
   wifi6: {
-    image: '/banners/Access-points_banner.jpg',
+    image: `${BASE_URL}banners/Access-points_banner.jpg`,
     alt: 'Wi-Fi 6 Access Points',
   },
 };
